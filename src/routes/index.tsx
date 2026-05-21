@@ -114,9 +114,7 @@ function Home() {
         </div>
       </section>
 
-      <section
-        className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[1fr_0.92fr] lg:px-8 lg:py-28"
-      >
+      <section className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[1fr_0.92fr] lg:px-8 lg:py-28">
         <div className="flex flex-col justify-center">
           <SectionLabel>{m.intro_kicker()}</SectionLabel>
           <h2 className="mt-4 max-w-3xl text-4xl font-black leading-tight text-[#15171a] sm:text-5xl">

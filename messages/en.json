@@ -23,7 +23,7 @@
   "hero_capability_heat_body": "Treatment facilities that improve tooling performance for demanding industrial use.",
   "home_profile_cta": "Open profile",
   "profile_hero_kicker": "Company profile",
-  "profile_hero_title": "A focused steel distribution partner in the Cikarang industrial corridor.",
+  "profile_hero_title": "A focused steel processing partner in the Cikarang industrial corridor.",
   "profile_hero_body": "Since 2011, Sinar Putra Metalindo has supported manufacturing teams with practical steel supply, processing, and technical service from Delta Silicon II.",
   "profile_vision_kicker": "Vision",
   "profile_vision_title": "Dedicated in steel, delivering innovative solutions for industrial needs.",
@@ -72,5 +72,17 @@
   "service_machining_title": "Machining and heat treatment",
   "service_machining_body": "Milling, grinding, and heat treatment support customers who need shorter lead times and stronger tooling performance.",
   "service_support_title": "Technical support",
-  "service_support_body": "Experienced support teams assist customers with material, process, and production requirements."
+  "service_support_body": "Experienced support teams assist customers with material, process, and production requirements.",
+  "customers_kicker": "Customers served",
+  "customers_title": "Trusted by manufacturing teams across automotive and industrial supply chains.",
+  "contact_kicker": "Contact",
+  "contact_title": "Talk to SPM about steel processing requirements.",
+  "contact_address_label": "Address",
+  "contact_address": "Jl. Johar Blok F6 No. 3 A-B, Delta Silicon II Industrial Park, Lippo Cikarang Bekasi 17550",
+  "contact_phone_label": "Call us",
+  "contact_phone_1": "+62.21-8990-4100 / 2957-7585 / 8990-4125 / 2957-7584",
+  "contact_phone_2": "8990-4500 / 2957-7586 / 2961-0800",
+  "contact_phone_3": "+62.21-8990-4145 / 7070-6482",
+  "capacity_note": "Please consult with us regarding daily capacity.",
+  "footer_text": "Sinar Putra Metalindo"
 }
