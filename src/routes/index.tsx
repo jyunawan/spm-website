@@ -71,7 +71,7 @@ function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#f6f5f1] text-[#15171a]">
+    <main className="min-h-screen bg-white text-[#15171a]">
       <section className="relative overflow-hidden bg-[#15171a] text-white">
         <div className="absolute inset-0">
           <img
@@ -114,31 +114,50 @@ function Home() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[1fr_0.92fr] lg:px-8 lg:py-28">
-        <div className="flex flex-col justify-center">
-          <SectionLabel>{m.intro_kicker()}</SectionLabel>
-          <h2 className="mt-4 max-w-3xl text-4xl font-black leading-tight text-[#15171a] sm:text-5xl">
-            {m.intro_title()}
-          </h2>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-[#565e66]">
-            {m.intro_body()}
-          </p>
-          <div className="mt-8">
-            <a
-              href={localizeHref("/profile")}
-              className="inline-flex items-center justify-center gap-2 bg-[#15171a] px-6 py-3.5 text-sm font-black uppercase tracking-[0.08em] text-white transition hover:bg-[#2c3136]"
-            >
-              {m.home_profile_cta()}
-              <ArrowRight className="h-4 w-4" aria-hidden="true" />
-            </a>
+      <section className="bg-[#f6f5f1]">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[1fr_0.92fr] lg:px-8 lg:py-28">
+          <div className="flex flex-col justify-center">
+            <SectionLabel>{m.intro_kicker()}</SectionLabel>
+            <h2 className="mt-4 max-w-3xl text-4xl font-black leading-tight text-[#15171a] sm:text-5xl">
+              {m.intro_title()}
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#565e66]">
+              {m.intro_body()}
+            </p>
+            <div className="mt-8">
+              <a
+                href={localizeHref("/profile")}
+                className="inline-flex items-center justify-center gap-2 bg-[#15171a] px-6 py-3.5 text-sm font-black uppercase tracking-[0.08em] text-white transition hover:bg-[#2c3136]"
+              >
+                {m.home_profile_cta()}
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </a>
+            </div>
+          </div>
+          <div className="relative min-h-92 overflow-hidden bg-[#283036]">
+            <img
+              src={officeIntroImage}
+              alt="Sinar Putra Metalindo office"
+              className="h-full w-full object-cover object-left"
+            />
           </div>
         </div>
-        <div className="relative min-h-92 overflow-hidden bg-[#283036]">
-          <img
-            src={officeIntroImage}
-            alt="Sinar Putra Metalindo office"
-            className="h-full w-full object-cover object-left"
-          />
+      </section>
+
+      <section
+        id="customers"
+        className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28"
+      >
+        <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+          <div className="max-w-3xl">
+            <SectionLabel>{m.customers_kicker()}</SectionLabel>
+            <h2 className="mt-4 text-4xl font-black leading-tight text-[#15171a] sm:text-5xl">
+              {m.customers_title()}
+            </h2>
+          </div>
+        </div>
+        <div className="mt-12">
+          <LogoWall items={customers} />
         </div>
       </section>
 
@@ -186,23 +205,6 @@ function Home() {
           <p className="mt-8 max-w-2xl text-lg leading-8 text-white/72">
             {m.capacity_note()}
           </p>
-        </div>
-      </section>
-
-      <section
-        id="customers"
-        className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28"
-      >
-        <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-3xl">
-            <SectionLabel>{m.customers_kicker()}</SectionLabel>
-            <h2 className="mt-4 text-4xl font-black leading-tight text-[#15171a] sm:text-5xl">
-              {m.customers_title()}
-            </h2>
-          </div>
-        </div>
-        <div className="mt-12">
-          <LogoWall items={customers} />
         </div>
       </section>
     </main>

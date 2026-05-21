@@ -9,8 +9,8 @@ export function LogoWall({ items }: { items: LogoWallItem[] }) {
 
   return (
     <div className="relative overflow-hidden border-y border-black/10 py-2">
-      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-linear-to-r from-[#f6f5f1] to-transparent sm:w-28" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-linear-to-l from-[#f6f5f1] to-transparent sm:w-28" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-linear-to-r from-white to-transparent sm:w-28" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-linear-to-l from-white to-transparent sm:w-28" />
       <LogoWallRow items={firstRow} direction="normal" />
       <LogoWallRow items={secondRow} direction="reverse" />
     </div>
