@@ -292,7 +292,15 @@ function Services() {
 
       <section className="bg-white py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionLabel>{m.services_training_kicker()}</SectionLabel>
+          <div className="max-w-3xl">
+            <SectionLabel>{m.services_training_kicker()}</SectionLabel>
+            <h2 className="mt-4 text-4xl font-black leading-tight text-[#15171a] sm:text-5xl">
+              {m.services_training_title()}
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-[#565e66]">
+              {m.services_training_body()}
+            </p>
+          </div>
           <div className="mt-8 border border-black/10 bg-[#f6f5f1] p-4 shadow-sm sm:p-5">
             <div className="grid gap-4 md:grid-cols-3">
               {trainingImages.map((image) => (
@@ -308,15 +316,15 @@ function Services() {
                 </div>
               ))}
             </div>
-            <div className="mt-5 flex justify-start">
-              <a
-                href={localizeHref("/contact")}
-                className="inline-flex items-center justify-center gap-2 bg-[#15171a] px-6 py-3.5 text-sm font-black uppercase tracking-[0.08em] text-white transition hover:bg-[#2c3136]"
-              >
-                {m.services_contact_cta()}
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </a>
-            </div>
+          </div>
+          <div className="mt-5 flex justify-start">
+            <a
+              href={localizeHref("/contact")}
+              className="inline-flex items-center justify-center gap-2 bg-[#15171a] px-6 py-3.5 text-sm font-black uppercase tracking-[0.08em] text-white transition hover:bg-[#2c3136]"
+            >
+              {m.services_contact_cta()}
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </a>
           </div>
         </div>
       </section>
