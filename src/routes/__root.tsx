@@ -1,9 +1,16 @@
-import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router";
+import {
+  HeadContent,
+  Outlet,
+  Scripts,
+  createRootRoute,
+} from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 
+import { Navbar } from "#/components/navbar";
 import appCss from "../styles.css?url";
 import { getLocale } from "#/paraglide/runtime";
+import * as m from "#/paraglide/messages";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -16,7 +23,11 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "TanStack Start Starter",
+        title: m.site_title(),
+      },
+      {
+        name: "description",
+        content: m.site_description(),
       },
     ],
     links: [
@@ -29,14 +40,15 @@ export const Route = createRootRoute({
   shellComponent: RootDocument,
 });
 
-function RootDocument({ children }: { children: React.ReactNode }) {
+function RootDocument() {
   return (
     <html lang={getLocale()}>
       <head>
         <HeadContent />
       </head>
       <body>
-        {children}
+        <Navbar />
+        <Outlet />
         <TanStackDevtools
           config={{
             position: "bottom-right",

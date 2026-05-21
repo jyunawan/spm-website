@@ -27,7 +27,6 @@ const config = defineConfig({
         },
       ],
     }),
-    ,
     devtools(),
     netlify(),
     tailwindcss(),
