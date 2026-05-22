@@ -9,7 +9,7 @@ import logo from "#/assets/images/logo.png";
 const navItems = [
   { label: m.nav_home, href: "/" },
   { label: m.nav_profile, href: "/profile" },
-  { label: m.nav_products, href: "/customers" },
+  { label: m.nav_products, href: "/products" },
   { label: m.nav_services, href: "/services" },
   { label: m.nav_contact, href: "/contact" },
 ];
